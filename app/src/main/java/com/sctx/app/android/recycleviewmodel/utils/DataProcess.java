@@ -1,4 +1,4 @@
-package com.sctx.app.android.recycleviewmodel;
+package com.sctx.app.android.recycleviewmodel.utils;
 
 import org.json.JSONArray;
 import org.json.JSONException;

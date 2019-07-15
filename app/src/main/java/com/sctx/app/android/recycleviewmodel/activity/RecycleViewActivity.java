@@ -1,4 +1,4 @@
-package com.sctx.app.android.recycleviewmodel;
+package com.sctx.app.android.recycleviewmodel.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.support.v7.widget.RecyclerView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.google.gson.Gson;
+import com.sctx.app.android.recycleviewmodel.utils.DataProcess;
+import com.sctx.app.android.recycleviewmodel.R;
 import com.sctx.app.android.recycleviewmodel.adapter.RecycleViewAdapter;
 import com.sctx.app.android.recycleviewmodel.model.ItemModel;
 
