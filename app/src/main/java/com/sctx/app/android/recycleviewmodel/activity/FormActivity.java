@@ -47,7 +47,7 @@ public class FormActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
 
-        //数据源
+        //下拉列表数据源
         ArrayList<String> spinners = new ArrayList<>();
         spinners.add("今日");
         spinners.add("昨日");
