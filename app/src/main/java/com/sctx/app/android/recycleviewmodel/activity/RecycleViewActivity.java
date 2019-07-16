@@ -34,9 +34,11 @@ public class RecycleViewActivity extends AppCompatActivity implements BaseQuickA
         setContentView(R.layout.activity_recycleview);
         ButterKnife.bind(this);
 
-
+        //填充假数据，后面改成网络请求
         lst.addAll(getData());
-        //用适配器渲染界面
+
+
+        //用适配器渲染界面（这里不用动，固定写法）
         recycleViewAdapter = new RecycleViewAdapter(R.layout.item_recycle, lst);
         recycleViewAdapter.setOnLoadMoreListener(this, recycleview);
         recycleview.setLayoutManager(new LinearLayoutManager(this));
@@ -44,9 +46,14 @@ public class RecycleViewActivity extends AppCompatActivity implements BaseQuickA
 
     }
 
-
+    /**
+     * 加载更多
+     */
     @Override
     public void onLoadMoreRequested() {
+        //模拟添加第二页数据
+        lst.addAll(getData());
+
         lst.addAll(getData());
         recycleViewAdapter.setNewData(lst);
         if (lst.size() > 60) {

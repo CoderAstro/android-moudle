@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.tv_form:
+                Intent intent1 = new Intent(this, FormActivity.class);
+                startActivity(intent1);
                 break;
         }
     }
